@@ -4,7 +4,7 @@ import style from './Body5.module.css'
 const Body5 = () => {
     return (
         <div className={style.outerContainer1}>
-            <img src="../../../public/images/Plant 3.png" />
+            <img src="../../../public/images/Plant3.png" />
             <div className={style.textArea1}>
                 <h2>We have made the beauty of plants one of the most beautiful features in your home.
                 </h2>

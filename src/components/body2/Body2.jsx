@@ -15,7 +15,7 @@ const Body2 = () => {
                         <p className={style.para}>Start From <b>$320</b></p>
                         <span>SHOP NOW</span>
                     </div>
-                    <img src='../../../public/images/Flower pot.png' alt="Flower pot" />
+                    <img src='../../../public/images/Flowerpot.png' alt="Flower pot" />
                 </div>
                 <div className={style.rightPartition}>
                     <div className={style.pot1}>

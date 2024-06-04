@@ -8,7 +8,7 @@ const Body3 = () => {
                 <div className={style.textContainer}>
                     <h1>Make your home beautiful with plants</h1>
                 </div>
-                <img src='../../../public/images/Plant 2.png' />
+                <img src='../../../public/images/Plant2.png' />
             </div>
         </div>
     )

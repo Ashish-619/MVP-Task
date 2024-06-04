@@ -10,7 +10,7 @@ const Body1 = () => {
         <button>Learn More</button>
       </div>
       <div className={style.rightCard}>
-        <img src='../../../public/images/Plant 2.png' alt='plant' />
+        <img src='../../../public/images/Plant2.png' alt='plant' />
         <div className={style.rightCardInner}>
           <div className={style.fontContent}>
             <h2>PisumSativum</h2>

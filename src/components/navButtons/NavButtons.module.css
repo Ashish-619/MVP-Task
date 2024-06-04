@@ -26,7 +26,7 @@
     height: 20px;
     border-radius: 50%;
     /* Make it a circle */
-    background-image: url('../../../public/images/Plant 3.png');
+    background-image: url('../../../public/images/Plant3.png');
     background-size: cover;
     margin-right: 10px;
 }
