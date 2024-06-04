@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './Body2.module.css';
 import Flowerpot from '../../../public/images/Flowerpot.png'
-import Bonsai from '../../../public/images/Bonsai.png'
+import Bonsai from '../../../public/images/bonsai.png'
 import Plant3 from '../../../public/images/Plant3.png'
 
 const Body2 = () => {
