@@ -32,7 +32,7 @@ const Body2 = () => {
                             <h2>Plant for Garden</h2>
                             <span>SHOP NOW</span>
                         </div>
-                        <img src='../../../public/images/Plant 3.png' alt="Plant" />
+                        <img src='../../../public/images/Plant3.png' alt="Plant" />
                     </div>
                 </div>
             </div>

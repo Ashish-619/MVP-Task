@@ -7,7 +7,7 @@ const Body4 = ({ plants }) => {
             {/* Map over the plants array to generate cards */}
             {plants.map((plant, index) => (
                 <div key={index} className={style.card}>
-                    <img className={style.mainImage} src={`../../../public/images/Plant 2.png`} alt='Plant' />
+                    <img className={style.mainImage} src={`../../../public/images/Plant2.png`} alt='Plant' />
                     <div className={style.textArea}>
                         <p><b>{plant.name}</b></p>
                         <div className={style.priceContainer}>
