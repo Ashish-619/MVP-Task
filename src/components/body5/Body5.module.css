@@ -1,7 +1,5 @@
-/* Body5.module.css */
-
 .outerContainer1 {
-    position: relative; /* Positioning context for pseudo-element */
+    position: relative; 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -9,25 +7,25 @@
 }
 
 .outerContainer1 img {
-    width: 25%; /* Adjust image width as needed */
+    width: 25%; 
     height: auto;
-    transform: rotate(45deg); /* Rotate the image */
-    margin-right: 1em; /* Add margin to separate image from text */
-    position: relative; /* Ensure positioning context for z-index */
-    z-index: 1; /* Ensure image is above the pseudo-element */
+    transform: rotate(45deg); 
+    margin-right: 1em; 
+    position: relative;
+    z-index: 1; 
 }
 
 .outerContainer1::before {
-    content: ''; /* Required for pseudo-elements */
-    position: absolute; /* Positioning relative to outerContainer1 */
-    top: 50%; /* Adjust top position to center the half-circle */
-    left: 0.1%; /* Adjust left position to center the half-circle */
-    transform: translate(-50%, -50%); /* Center the half-circle */
-    width: 50%; /* Adjust width of the half-circle */
-    height: 100%; /* Height same as outerContainer1 */
-    background-color: rgb(153, 231, 196); /* Color of the half-circle */
-    border-radius: 50%; /* Create a circle shape */
-    z-index: 0; /* Ensure the half-circle is behind the image */
+    content: ''; 
+    position: absolute; 
+    top: 50%; 
+    left: 0.1%; 
+    transform: translate(-50%, -50%); 
+    width: 50%; 
+    height: 100%; 
+    background-color: rgb(153, 231, 196); 
+    border-radius: 50%; 
+    z-index: 0; 
 }
 
 .textArea1 {
@@ -46,4 +44,64 @@
 .textArea1 p {
     margin: 0;
     color: gray;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .outerContainer1 {
+        flex-direction: column;
+        align-items: center;
+        margin: 1em;
+    }
+
+    .outerContainer1 img {
+        width: 50%;
+        transform: rotate(0);
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+
+    .outerContainer1::before {
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 30%;
+    }
+
+    .textArea1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .textArea1 h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .outerContainer1 {
+        margin: 0.5em;
+    }
+
+    .outerContainer1 img {
+        width: 70%;
+        margin-bottom: 0.5em;
+    }
+
+    .outerContainer1::before {
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 25%;
+    }
+
+    .textArea1 h2 {
+        font-size: 1.2em;
+    }
+
+    .textArea1 p {
+        font-size: 0.9em;
+    }
 }

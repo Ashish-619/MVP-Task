@@ -1,25 +1,19 @@
-/* Body4.module.css */
-
 .boxContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* Center the cards horizontally */
 }
 
 .card {
     width: calc(25% - 5em);
-    /* Adjust card width to fit four cards in one line with margin */
     background-color: aliceblue;
     padding: 1em;
     border-radius: 1em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     margin: 1em;
-    /* Adjust margin for spacing between cards */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Center child elements horizontally */
 }
 
 .textArea {
@@ -33,7 +27,6 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
-    /* Add some margin to space out from the first paragraph */
 }
 
 .priceContainer p {
@@ -45,13 +38,9 @@
 
 .priceContainer .bagIconContainer {
     width: 30px;
-    /* Adjust the size of the circle */
     height: 30px;
-    /* Adjust the size of the circle */
     background-color: rgb(157, 213, 157);
-    /* Set the background color of the circle */
     border-radius: 50%;
-    /* Make the container a circle */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +49,6 @@
 
 .priceContainer img {
     width: 15px;
-    /* Adjust size for small favicon */
     height: auto;
     display: inline-block;
 }
@@ -71,8 +59,39 @@
     margin-bottom: 10px;
 }
 
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .card {
+        width: calc(33.33% - 4em);
+    }
+}
+
 @media (max-width: 768px) {
     .card {
         width: calc(50% - 2em);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: calc(100% - 2em);
+        margin: 1em 0;
+    }
+
+    .card .mainImage {
+        width: 50%;
+    }
+
+    .priceContainer p {
+        font-size: 0.9em;
+    }
+
+    .priceContainer .bagIconContainer {
+        width: 25px;
+        height: 25px;
+    }
+
+    .priceContainer img {
+        width: 12px;
     }
 }

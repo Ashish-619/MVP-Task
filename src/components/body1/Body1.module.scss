@@ -35,6 +35,8 @@
         border-radius: 10vw;
         background-color: chocolate;
         color: white;
+        padding: 0.5em 1em;
+        font-size: 1.2vw;
     }
 }
 
@@ -50,7 +52,6 @@
     width: 30vw;
     height: auto;
     margin-left: -12%;
-
 }
 
 .rightCardInner {
@@ -65,11 +66,10 @@
     margin-bottom: 12vh;
 
     h2 {
-
         font-size: 2vw;
     }
 
-    P {
+    p {
         font-size: 1vw;
     }
 
@@ -87,5 +87,98 @@
         height: 25vh;
         width: 10vw;
         transform: scale(0.7);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .mainContainer {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 5vh;
+    }
+
+    .leftCard {
+        width: 80%;
+        align-items: center;
+        text-align: center;
+
+        pre {
+            font-size: 6vw;
+        }
+
+        p {
+            font-size: 4vw;
+        }
+
+        button {
+            font-size: 4vw;
+            padding: 1em 2em;
+        }
+    }
+
+    .rightCard {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-radius: 15% 15% 0 0;
+    }
+
+    .rightCard > img {
+        width: 60vw;
+        margin-left: 0;
+    }
+
+    .rightCardInner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 5vh;
+
+        h2 {
+            font-size: 5vw;
+        }
+
+        p {
+            font-size: 3vw;
+        }
+
+        a {
+            font-size: 3vw;
+        }
+
+        img {
+            width: 50vw;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .leftCard pre {
+        font-size: 8vw;
+    }
+
+    .leftCard p {
+        font-size: 6vw;
+    }
+
+    .leftCard button {
+        font-size: 5vw;
+        padding: 1.5em 3em;
+    }
+
+    .rightCardInner h2 {
+        font-size: 7vw;
+    }
+
+    .rightCardInner p {
+        font-size: 4vw;
+    }
+
+    .rightCardInner a {
+        font-size: 4vw;
     }
 }
