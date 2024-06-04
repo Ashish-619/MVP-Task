@@ -17,7 +17,7 @@ const Body1 = () => {
             <p>Monsera</p>
             <a>LEARN MORE</a>
           </div>
-          <img src='../../../public/images/Plant 2.png' alt='plant' />
+          <img src='../../../public/images/Plant2.png' alt='plant' />
         </div>
       </div>
     </div>
