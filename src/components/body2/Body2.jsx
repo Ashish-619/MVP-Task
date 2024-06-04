@@ -1,5 +1,8 @@
 import React from 'react';
 import style from './Body2.module.css';
+import Flowerpot from '../../../public/images/Flowerpot.png'
+import Bonsai from '../../../public/images/Bonsai.png'
+import Plant3 from '../../../public/images/Plant3.png'
 
 const Body2 = () => {
     return (
@@ -15,7 +18,7 @@ const Body2 = () => {
                         <p className={style.para}>Start From <b>$320</b></p>
                         <span>SHOP NOW</span>
                     </div>
-                    <img src='../../../public/images/Flowerpot.png' alt="Flower pot" />
+                    <img src={Flowerpot} alt="Flower pot" />
                 </div>
                 <div className={style.rightPartition}>
                     <div className={style.pot1}>
@@ -24,7 +27,7 @@ const Body2 = () => {
                             <h2>Monsera</h2>
                             <span>SHOP NOW</span>
                         </div>
-                        <img src='../../../public/images/bonsai.png' alt="Bonsai" />
+                        <img src={Bonsai} alt="Bonsai" />
                     </div>
                     <div className={style.pot2}>
                         <div className={style.pot2Text}>
@@ -32,7 +35,7 @@ const Body2 = () => {
                             <h2>Plant for Garden</h2>
                             <span>SHOP NOW</span>
                         </div>
-                        <img src='../../../public/images/Plant3.png' alt="Plant" />
+                        <img src={Plant3} alt="Plant" />
                     </div>
                 </div>
             </div>

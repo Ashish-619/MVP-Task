@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './Body1.module.scss';
+import Plant2 from '../../../public/images/Plant2.png';
 
 const Body1 = () => {
   return (
@@ -10,14 +11,14 @@ const Body1 = () => {
         <button>Learn More</button>
       </div>
       <div className={style.rightCard}>
-        <img src='../../../public/images/Plant2.png' alt='plant' />
+        <img src={Plant2} alt='plant' />
         <div className={style.rightCardInner}>
           <div className={style.fontContent}>
             <h2>PisumSativum</h2>
             <p>Monsera</p>
             <a>LEARN MORE</a>
           </div>
-          <img src='../../../public/images/Plant2.png' alt='plant' />
+          <img src={Plant2} alt='plant' />
         </div>
       </div>
     </div>

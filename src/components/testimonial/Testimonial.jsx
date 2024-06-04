@@ -1,5 +1,6 @@
 import React from 'react'
 import style from './Testimonial.module.css'
+import Bonsai from '../../../public/images/bonsai.png'
 
 const Testimonial = () => {
     return (
@@ -14,7 +15,7 @@ const Testimonial = () => {
                     <button>&gt;</button>
                 </div>
             </div>
-            <img src="../../../public/images/bonsai.png" />
+            <img src={Bonsai} />
         </div>
     )
 }
